@@ -1,0 +1,211 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2024-01-16 00:44:34
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:60) ~[forge-1.20.1-47.2.0-universal.jar%23229!/:?] {re:classloading}
+	at net.minecraftforge.client.loading.ClientModLoader.completeModLoading(ClientModLoader.java:143) ~[forge-1.20.1-47.2.0-universal.jar%23229!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.lambda$new$4(Minecraft.java:571) ~[client-1.20.1-20230612.114412-srg.jar%23224!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.Util.m_137521_(Util.java:421) ~[client-1.20.1-20230612.114412-srg.jar%23224!/:?] {re:classloading,re:mixin}
+	at net.minecraft.client.Minecraft.lambda$new$5(Minecraft.java:564) ~[client-1.20.1-20230612.114412-srg.jar%23224!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.loading.ForgeLoadingOverlay.m_88315_(ForgeLoadingOverlay.java:146) ~[forge-1.20.1-47.2.0-universal.jar%23229!/:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:954) ~[client-1.20.1-20230612.114412-srg.jar%23224!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23224!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23224!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[minecraft-1.20.1-client.jar:?] {re:mixin,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:flywheel.mixins.json:ClientMainMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:57) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243) ~[?:?] {}
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278) ~[?:?] {}
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) ~[?:?] {}
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at com.forsteri.createmoredrillheads.entry.TieredDrillRegistration.<clinit>(TieredDrillRegistration.java:18) ~[createmoredrillheads-2.0.2-1.20.1.jar%23209!/:2.0.2-1.20.1] {re:classloading}
+-- MOD createmoredrillheads --
+Details:
+	Caused by 0: java.lang.reflect.InvocationTargetException
+		at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+		at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+		at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+		at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {}
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:68) ~[javafmllanguage-1.20.1-47.2.0.jar%23226!/:?] {}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:123) ~[fmlcore-1.20.1-47.2.0.jar%23225!/:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+	Mod File: /C:/Games/MultiMC/instances/create-1.20.1/.minecraft/mods/createmoredrillheads-2.0.2-1.20.1.jar
+	Failure message: Create: More Drill Heads (createmoredrillheads) has failed to load correctly
+		java.lang.reflect.InvocationTargetException: null
+	Mod Version: 2.0.2-1.20.1
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.NoSuchMethodError: 'com.simibubi.create.foundation.data.CreateRegistrate com.simibubi.create.foundation.data.CreateRegistrate.useCreativeTab(net.minecraftforge.registries.RegistryObject)'
+Stacktrace:
+	at com.forsteri.createmoredrillheads.entry.TieredDrillRegistration.<clinit>(TieredDrillRegistration.java:18) ~[createmoredrillheads-2.0.2-1.20.1.jar%23209!/:2.0.2-1.20.1] {re:classloading}
+	at com.forsteri.createmoredrillheads.CreateMoreDrillHeads.<init>(CreateMoreDrillHeads.java:25) ~[createmoredrillheads-2.0.2-1.20.1.jar%23209!/:2.0.2-1.20.1] {re:classloading}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:68) ~[javafmllanguage-1.20.1-47.2.0.jar%23226!/:?] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:123) ~[fmlcore-1.20.1-47.2.0.jar%23225!/:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.6, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 5638834728 bytes (5377 MiB) / 8589934592 bytes (8192 MiB) up to 16777216000 bytes (16000 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 5800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 0
+	Microarchitecture: Zen 3
+	Frequency (GHz): 4.54
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: OrayIddDriver Device
+	Graphics card #0 vendor: Shanghai Best Oray Information Technology Co., Ltd.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=17.1.58.818
+	Graphics card #1 name: NVIDIA GeForce RTX 3080
+	Graphics card #1 vendor: NVIDIA (0x10de)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x220a
+	Graphics card #1 versionInfo: DriverVersion=31.0.15.3623
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.60
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.60
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 40662.14
+	Virtual memory used (MB): 35965.89
+	Swap memory total (MB): 7948.10
+	Swap memory used (MB): 234.68
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms8192m -Xmx16000m
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+		kotlinforforge@4.4.0
+		lowcodefml@null
+	Mod List: 
+		bellsandwhistles-0.1-1.20.1.jar                   |Create: Bells and Whistles    |bellsandwhistles              |0.1-1.20.1          |COMMON_SET|Manifest: NOSIGNATURE
+		Renforced_Brass_Armor_1.20.1.jar                  |Create Upgraded Armor         |create_upgraded_armor         |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		createbigcannons-forge-1.20.1-0.5.3.b.jar         |Create Big Cannons            |createbigcannons              |0.5.3.b-nightly-8a45|COMMON_SET|Manifest: NOSIGNATURE
+		create_misc_and_things_+1.20.1_4.0A.jar           |create: things and misc       |create_things_and_misc        |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		Create-Dreams-n-Desires-1.20.1-0.2c.PREBETA.jar   |Create: Dreams & Desires      |create_dd                     |0.2c.PREBETA        |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.4.jar                     |GeckoLib 4                    |geckolib                      |4.4                 |COMMON_SET|Manifest: NOSIGNATURE
+		createdeco-2.0.0-forge-1.20.1.jar                 |Create Deco                   |createdeco                    |2.0.0-forge-1.20.1  |COMMON_SET|Manifest: NOSIGNATURE
+		botarium-forge-1.20.1-2.3.1.jar                   |Botarium                      |botarium                      |2.3.1               |COMMON_SET|Manifest: NOSIGNATURE
+		create_recycle_1.0.2_forge_1.20.1.jar             |Create Recycling              |create_crush_everything       |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		CreateMoreAutomation-1.20.1-0.3.0.jar             |Create: More Automation       |create_more_automation        |0.3.0               |COMMON_SET|Manifest: NOSIGNATURE
+		ritchiesprojectilelib-1.0.0-369e88d+1.20.1-forge.j|Ritchie's Projectile Library  |ritchiesprojectilelib         |1.0.0-369e88d+1.20.1|COMMON_SET|Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0.jar                       |MixinExtras                   |mixinextras                   |0.2.0               |COMMON_SET|Manifest: NOSIGNATURE
+		design_decor-0.2a-1.20.1.jar                      |Create: Design n' Decor       |design_decor                  |0.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		create-confectionery1.20.1_v1.1.0.jar             |Create Confectionery          |create_confectionery          |1.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		create_dragon_lib-1.20.1-1.3.3.jar                |Create: Dragon Lib            |create_dragon_lib             |1.3.3               |COMMON_SET|Manifest: NOSIGNATURE
+		create_compressed_1.0.1_forge_1.20.1.jar          |Create Compressed             |create_compressed             |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		create_easy_structures-0.1.0-1.20.1.jar           |Create: Easy Structures       |create_easy_structures        |0.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		Steam_Rails-1.5.3+forge-mc1.20.1.jar              |Create: Steam 'n' Rails       |railways                      |1.5.3+forge-mc1.20.1|COMMON_SET|Manifest: NOSIGNATURE
+		create-new-age-forge-1.20.1-1.1.1.jar             |Create: New Age               |create_new_age                |1.1.1               |COMMON_SET|Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.2.1.jar                       |Balm                          |balm                          |7.2.1               |COMMON_SET|Manifest: NOSIGNATURE
+		interiors-0.5.2+mc1.20.1-FORGE.jar                |Create: Interiors             |interiors                     |0.5.2               |COMMON_SET|Manifest: NOSIGNATURE
+		cloth-config-11.1.118-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.118            |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.20.1-47.2.0-universal.jar                 |Forge                         |forge                         |47.2.0              |COMMON_SET|Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		tfmg-0.7.0c-1.20.1.jar                            |Create: The Factory Must Grow |tfmg                          |0.7.0c              |COMMON_SET|Manifest: NOSIGNATURE
+		create_connected-0.4.2-mc1.20.1.jar               |Create: Connected             |create_connected              |0.4.2-mc1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		cofh_core-1.20.1-11.0.0.51.jar                    |CoFH Core                     |cofh_core                     |11.0.0              |COMMON_SET|Manifest: NOSIGNATURE
+		createframed-1.20.1-1.2.jar                       |Create: Framed                |createframed                  |1.2                 |COMMON_SET|Manifest: NOSIGNATURE
+		Create+Sweets+And+Treats+1.1.1.jar                |CreateSweetsAndTreets         |createsweetsandtreets         |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		createutilities-0.1.4+1.20.1.jar                  |Create Utilities              |createutilities               |0.1.4+1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		createmoredrillheads-2.0.2-1.20.1.jar             |Create: More Drill Heads      |createmoredrillheads          |2.0.2-1.20.1        |ERROR     |Manifest: NOSIGNATURE
+		create_recipes-1.2.0.jar                          |Create: More Recipes          |create_recipes                |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		kffmod-4.4.0.jar                                  |Kotlin For Forge              |kotlinforforge                |4.4.0               |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-5.4.7+1.20.1.jar                     |Curios API                    |curios                        |5.4.7+1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-0.6.10-7.jar                |Flywheel                      |flywheel                      |0.6.10-7            |COMMON_SET|Manifest: NOSIGNATURE
+		create-1.20.1-0.5.1.f.jar                         |Create                        |create                        |0.5.1.f             |COMMON_SET|Manifest: NOSIGNATURE
+		create_central_kitchen-1.20.1-for-create-0.5.1.f-1|Create: Central Kitchen       |create_central_kitchen        |1.3.9.d             |COMMON_SET|Manifest: NOSIGNATURE
+		CreateCasing-1.20.1-1.5.0-ht3.jar                 |Create : Encased              |createcasing                  |1.20.1-1.5.0-ht3    |COMMON_SET|Manifest: NOSIGNATURE
+		create_mechanical_extruder-1.20.1-1.5.7.e-22.jar  |Create Mechanical Extruder    |create_mechanical_extruder    |1.20.1-1.5.7.e-22   |COMMON_SET|Manifest: NOSIGNATURE
+		createsifter-1.20.1-1.8.1.e-22.jar                |Create Sifter                 |createsifter                  |1.20.1-1.8.1.e-22   |COMMON_SET|Manifest: NOSIGNATURE
+		createoreexcavation-1.20-1.4.2.jar                |Create Ore Excavation         |createoreexcavation           |1.4.2               |COMMON_SET|Manifest: NOSIGNATURE
+		create_mechanical_spawner-1.20.1-0.0.14.e-22.jar  |Create Mechanical Spawner     |create_mechanical_spawner     |1.20.1-0.0.14.e-22  |COMMON_SET|Manifest: NOSIGNATURE
+		createarmoryv0.6.1n.jar                           |CreateArmory                  |createarmory                  |0.5                 |COMMON_SET|Manifest: NOSIGNATURE
+		create-stuff-additions1.20.1_v2.0.4a.jar          |Create Stuff & Additions      |create_sa                     |2.0.4.              |COMMON_SET|Manifest: NOSIGNATURE
+		balancedflight-1.20.1_v2.2.0.jar                  |Create: Balanced Flight       |balancedflight                |1.20.1_v2.2.0       |COMMON_SET|Manifest: NOSIGNATURE
+		createliquidfuel-2.1.0-1.20.1.jar                 |Create Liquid Fuel            |createliquidfuel              |2.1.0-1.20.1        |COMMON_SET|Manifest: NOSIGNATURE
+		architectury-9.1.12-forge.jar                     |Architectury                  |architectury                  |9.1.12              |COMMON_SET|Manifest: NOSIGNATURE
+		ftb-library-forge-2001.1.4.jar                    |FTB Library                   |ftblibrary                    |2001.1.4            |COMMON_SET|Manifest: NOSIGNATURE
+		create_enchantment_industry-1.20.1-for-create-0.5.|Create Enchantment Industry   |create_enchantment_industry   |1.2.7.h             |COMMON_SET|Manifest: NOSIGNATURE
+		sliceanddice-forge-3.2.0.jar                      |Create Slice & Dice           |sliceanddice                  |3.2.0               |COMMON_SET|Manifest: NOSIGNATURE
+		createaddition-1.20.1-1.2.1.jar                   |Create Crafts & Additions     |createaddition                |1.20.1-1.2.1        |COMMON_SET|Manifest: NOSIGNATURE
+		cristellib-1.1.5-forge.jar                        |Cristel Lib                   |cristellib                    |1.1.5               |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 4ccb2f11-06ba-4149-9e60-4b36c1a1ecac
+	Flywheel Backend: GL33 Instanced Arrays
+	FML: 47.2
+	Forge: net.minecraftforge:47.2.0
